@@ -1,1 +1,116 @@
-TODO
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <title>EXERCICE3</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="styles/exercice3.css">
+</head>
+
+<body>
+<div class="wrapper">
+  <div id="notreformulaire">
+    <form name="form1">
+      <h1>formulaire Web d'une agence immobilière</h1>
+      <label>
+        <span>Titre:</span>
+        <input type="text" placeholder="Entrez le titre du bien" required autofocus>
+      </label>
+
+      <label>
+        <span>Prix:</span>
+        <input type="number" min="0" placeholder="Entrez le prix du bien" required>
+      </label>
+
+      <label>
+        <span>Date de disponibilité du bien:</span>
+        <input type="date" required>
+      </label>
+
+      <label>
+        <span>type du bien:</span>
+        <select required>
+          <option>selectionnez un type
+          <option>appartement
+          <option>maison
+          <option>terrain
+          <option>parking
+          <option>batiment
+        </select>
+      </label>
+
+      <label>
+        <span>Suppléments:</span>
+        <select multiple>
+          <option>cave
+          <option>garage
+          <option>jacuzzi
+          <option>jardin
+          <option>terrasse
+          <option>balcon
+        </select>
+      </label>
+
+      <label>
+        <span>classe énergétique:</span>
+        <select>
+          <option>selectionnez une classe
+          <option>A
+          <option>B
+          <option>C
+          <option>D
+          <option>E
+          <option>F
+          <option>G
+        </select>
+      </label>
+
+      <label>
+        <span>Rue:</span>
+        <input type="text" placeholder="Entrez la Rue" required>
+      </label>
+
+      <label>
+        <span>Ville:</span>
+        <input type="text" placeholder="Entrez la ville" required>
+      </label>
+
+      <label>
+        <span>Téléphone:</span>
+        <input type="tel" placeholder="(+33) 123456789"
+               pattern="^(?:0|\(?\+33\)?\s?|0033\s?)[1-79](?:[\.\-\s]?\d\d){4}$">
+      </label>
+
+      <label>
+        <span>Email:</span>
+        <input type="email" placeholder="Votre-email@gmail.com" required>
+      </label>
+
+      <label>
+        <span>Details annonce:</span>
+        <textarea rows="4" cols="50"></textarea>
+      </label>
+
+      <label>
+        <span>Glisser l'image du bien ici:</span>
+        <canvas width="500" height="20"></canvas>
+      </label>
+
+      <div class="container">
+          <div id="dropArea" ondragover="return false" ondrop="this,event">Drop</div>
+          <div class="info">
+            <h2>Résulta:</h2>
+            <div id="result"></div>
+            <canvas width="500" height="20"></canvas>
+          </div>
+      </div>
+      <script src="scripts/exercice3.js"></script>
+
+
+      <input class="sendButton" type="submit" value="Vaider">
+
+    </form>
+  </div>
+</div>
+
+</body>
+</html>
